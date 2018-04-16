@@ -34,7 +34,16 @@ const PostLink = ({ post }) => (
 )
 
 export default () => (
-  <Layout>
+  <div>
+    <Head>
+      <title>My page title</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+      <meta name="google-site-verification" content="gzEz8GPL6Uy-kvB4n5x00RJCb33dp8JnLHPR_mSa6y8" />
+    </Head>
+    <Head>
+      <meta name="viewport" content="initial-scale=1.2, width=device-width" key="viewport" />
+    </Head>
+    <Layout>
     <h1>My Blog</h1>
     <ul>
       {getPosts().map((post) => (
@@ -51,4 +60,6 @@ export default () => (
       }
     `}</style>
   </Layout>
+</div>
+  
 )
