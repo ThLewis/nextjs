@@ -1,5 +1,6 @@
 import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
+import Head from 'next/head'
 
 function getPosts () {
   return [
